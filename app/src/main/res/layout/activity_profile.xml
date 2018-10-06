@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <ImageView
+        android:id="@+id/backgroundview"
+        android:layout_width="0dp"
+        android:layout_height="234dp"
+        android:scaleType="matrix"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@color/colorAccent" />
+
+    <ImageView
+        android:id="@+id/pictureview"
+        android:layout_width="114dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/backgroundview"
+        app:srcCompat="@color/view" />
+
+    <TextView
+        android:id="@+id/nameview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/whitetext"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/lastnameview"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@+id/backgroundview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pictureview"
+        tools:text="testing" />
+
+    <TextView
+        android:id="@+id/lastnameview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:textColor="@color/whitetext"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/nameview"
+        app:layout_constraintTop_toBottomOf="@+id/pictureview"
+        tools:text="testing" />
+
+    <TextView
+        android:id="@+id/handleview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:textColor="@color/whitetext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameview"
+        tools:text="testing" />
+
+    <View
+        android:id="@+id/rule1"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:background="@color/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/backgroundview" />
+
+    <TextView
+        android:id="@+id/followingview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="16dp"
+        android:text="FOLLOWING"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/followersview"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/rule1"
+        app:layout_constraintTop_toTopOf="@+id/rule1" />
+
+    <TextView
+        android:id="@+id/followersview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="FOLLOWERS"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/rule1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/followingview"
+        app:layout_constraintTop_toTopOf="@+id/rule1" />
+
+    <TextView
+        android:id="@+id/followingcountview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/rule1"
+        app:layout_constraintEnd_toEndOf="@+id/followingview"
+        app:layout_constraintStart_toStartOf="@+id/followingview"
+        app:layout_constraintTop_toBottomOf="@+id/followingview"
+        tools:text="123" />
+
+    <TextView
+        android:id="@+id/followerscountview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/rule1"
+        app:layout_constraintEnd_toEndOf="@+id/followersview"
+        app:layout_constraintStart_toStartOf="@+id/followersview"
+        app:layout_constraintTop_toBottomOf="@+id/followersview"
+        tools:text="12345" />
+
+    <TextView
+        android:id="@+id/aboutmeview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="About Me"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rule1" />
+
+    <TextView
+        android:id="@+id/aboutview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aboutmeview"
+        tools:text="aasdasdasfsd fsd sd fsd fsd as dasd afsdfsd fsa fdas dasd fsd fsd fa sda ss dfs df sad sdfs dfs df sdf sdf as das dasdasdasda asda sdasdasd asd asda sdasda sdas" />
+
+
+
+</android.support.constraint.ConstraintLayout>
